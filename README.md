@@ -15,9 +15,10 @@ Un oggetto Person è composto dai seguenti campi:
 
 Al primo accesso, la pagina mostra una tabella vuota seguita da un form che permetta l'inserimento del dato. Alla pressione del pulsante "submit" il dato (previa validazione, vedi sotto) viene caricato sul server in una lista memorizzata a livello del controller e visualizzato in tabella.
 Ad ogni ciclo di inserimento, il controller esegue una validazione e si assicura che:
-- name sia una stringa contenente almeno un carattere
-- surname sia una stringa contenente almeno un carattere
-- email sia una stringa contenente almeno un carattere e non sia stata già inserita precedentemente.
+- name sia una stringa contenente almeno tre caratteri
+- surname sia una stringa contenente almeno tre caratteri
+- email sia una stringa non vuota e sintatticamente corretta e che non sia stata già inserita precedentemente.
+
 Se una qualsiasi di queste condizioni viene meno, l'inserimento viene interrotto e viene visualizzato, sotto il form, un messaggio di errore appropriato.
 
 ## Requisiti
